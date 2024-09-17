@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff82;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info-section {
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-value {
+    font-style: italic;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    /* background-color: #ffffff82;x */
+}
+
+.order-table th, .order-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #ffffff82;
+    color: #333;
+}
+
+.order-table th[colspan="4"] {
+    text-align: center;
+}
+
+.menu-item {
+    text-align: left;
+    padding: 10px;
+    /* background-color: #ffffff82; */
+    width: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu-image {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-image:hover {
+    opacity: 0.7;
+}
+
+.order-table tr:nth-child(even) {
+    /* background-color: #f9f9f9; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: #f4f4f4; */
+}
+
+.total-label {
+    font-weight: bold;
+    color: #333;
+    border-top: 2px solid #ddd;
+}
+
+.payment-method {
+    text-align: left;
+    /* color: #f4f4f4; */
+    /* color: #333; */
+}
+
+input[type="radio"], input[type="number"] {
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
