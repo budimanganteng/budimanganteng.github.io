@@ -1,0 +1,198 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.logo {
+    text-align: center;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.btn-daftar {
+    background-color: #ffcc00;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-daftar:hover {
+    background-color: #e0b800; /* Darker highlight on hover */
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.data-mahasiswa-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.table-mahasiswa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-mahasiswa th,
+.table-mahasiswa td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-mahasiswa-header {
+    background-color: #004a9a;
+    color: white;
+}
+
+.table-mahasiswa-row:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripe for even rows */
+}
+
+.table-mahasiswa-row:hover {
+    background-color: #e9ecef; /* Light gray on hover */
+}
+
+/* Action icons */
+.table-mahasiswa-data a {
+    text-decoration: none;
+    font-size: 20px;
+}
+button{
+    background-color: #004a9a;
+    border-radius: 100px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #003875;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Styling for Edit and Delete buttons in the action column */
+.button-UD {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-UD a {
+    text-decoration: none;
+}
+
+.edit-data, .hapus-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+
+/* Edit button styling */
+.edit-data {
+    background-color: #28a745; /* Green color */
+}
+
+.edit-data:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Delete button styling */
+.hapus-data {
+    background-color: #dc3545; /* Red color */
+}
+
+.hapus-data:hover {
+    background-color: #c82333;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Icon and text alignment */
+.edit-data i, .hapus-data i {
+    margin-right: 5px;
+}
+
+.edit-data p, .hapus-data p {
+    margin: 0;
+}
+
+.table-kerja-data{
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-daftar {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
