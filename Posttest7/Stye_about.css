@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-item a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.profile-info p, .profile-info ul {
+    margin-bottom: 10px;
+}
+
+.profile-info h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.profile-info ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.profile-info ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .navbar-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-info h2 {
+        font-size: 28px;
+    }
+
+    .profile-info h3 {
+        font-size: 20px;
+    }
+}
